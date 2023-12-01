@@ -1,11 +1,12 @@
 import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {DomSanitizer} from "@angular/platform-browser";
+import {PanelComponent} from "../panel/panel.component";
 
 @Component({
   selector: 'app-editor',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, PanelComponent],
   templateUrl: './editor.component.html',
   styleUrl: './editor.component.scss'
 })
