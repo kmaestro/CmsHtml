@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  httpd:
+    container_name: my-apache-app
+    ports:
+      - '9999:80'
+    volumes:
+      - './dist/cms:/usr/local/apache2/htdocs/'
+    image: 'httpd:latest'
+    restart: always

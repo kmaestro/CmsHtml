@@ -16,7 +16,7 @@ export class EditorComponent implements OnInit, AfterViewInit {
 
 
   constructor(private sanitizer: DomSanitizer) {
-    this.iframeSrc = 'assets/project/index.html';
+    this.iframeSrc = '../index.html';
   }
 
   ngOnInit(): void {
